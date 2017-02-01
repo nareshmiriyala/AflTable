@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('gulpAlfApp')
+    .module('alfTableApp')
     .config(routeConfig);
 
   function routeConfig($routeProvider) {

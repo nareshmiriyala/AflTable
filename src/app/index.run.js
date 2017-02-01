@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('gulpAlfApp')
+    .module('alfTableApp')
     .run(runBlock);
 
   /** @ngInject */
