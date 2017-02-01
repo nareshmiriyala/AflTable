@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('alfTableApp')
+    .module('AflTableApp')
     .constant('moment', moment);
 
 })();

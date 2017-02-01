@@ -4,7 +4,7 @@
 (function() {
   'use strict';
   angular
-    .module('alfTableApp')
+    .module('AflTableApp')
     .service('playerRatings', playerRatings);
   function playerRatings() {
     var data = [

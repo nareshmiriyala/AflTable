@@ -4,7 +4,7 @@
   describe('controllers', function(){
     var vm;
 
-    beforeEach(module('alfTableApp'));
+    beforeEach(module('AflTableApp'));
     beforeEach(inject(function(_$controller_,  _playerRatings_) {
       spyOn(_playerRatings_, 'getRatings').and.returnValue([{}, {}, {}, {}, {}]);
 

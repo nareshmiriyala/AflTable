@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('alfTableApp', ['ngAnimate', 'ngResource', 'ngRoute', 'ui.bootstrap', 'toastr']);
+    .module('AflTableApp', ['ngAnimate', 'ngResource', 'ngRoute', 'ui.bootstrap', 'toastr']);
 
 })();

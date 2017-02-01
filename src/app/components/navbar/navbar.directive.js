@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('alfTableApp')
+    .module('AflTableApp')
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */
