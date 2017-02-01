@@ -3,36 +3,19 @@
 
   angular
     .module('alfTableApp')
-    .controller('MainController', MainController);
+    .controller('MainController',MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function MainController(playerRatings) {
     var vm = this;
-
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
     vm.creationDate = 1485943769706;
-    vm.showToastr = showToastr;
-
-    activate();
-
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
-    }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
+    vm.playerRatings = [];
+    getPlayerRatings();
+    function getPlayerRatings() {
+      vm.playerRatings = playerRatings.getRatings();
+      console.log(""+vm.playerRatings);
+      angular.forEach(vm.playerRatings, function(playerRating) {
+        playerRating.rank = Math.random();
       });
     }
   }

@@ -1,0 +1,20 @@
+
+.square {
+  float: left;
+  position: relative;
+  left: 30%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #333333;
+color:white}
+thead {
+  border-style: solid;
+  border-top-width: 3px ;
+  border-top-color: darkblue;
+  text-align: center;
+}
+tr{
+  text-align :left;
+}

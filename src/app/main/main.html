@@ -5,20 +5,28 @@
   </div>
 
   <div class="jumbotron text-center">
-    <p>Alf Table</p>
+
+
+
+    <div class="row">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-default">
+      <th>Rating</th>
+      <th>Player</th>
+      <th>Club</th>
+      <th>Position</th>
+      </thead>
+
+        <tr ng-repeat="rating in main.playerRatings">
+          <td class="square"><span>{{rating.detailedRatings[0].ranking}}
+          </span>
+          </td>
+
+          <td>{{rating.player.playerName.givenName}} {{rating.player.playerName.surname}}</td>
+          <td>{{rating.team.teamName}}</td>
+          <td>{{rating.position}}</td>
+        </tr>
+      </table>
   </div>
-
-  <!--<div class="row">-->
-    <!--<div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">-->
-      <!--<div class="thumbnail">-->
-        <!--<img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">-->
-        <!--<div class="caption">-->
-          <!--<h3>{{ awesomeThing.title }}</h3>-->
-          <!--<p>{{ awesomeThing.description }}</p>-->
-          <!--<p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-
+  </div>
 </div>
