@@ -17,7 +17,7 @@
 
 
 
-    it('should define more than 5 player rankings', function() {
+    it('should define 5 player rankings', function() {
       expect(angular.isArray(vm.playerRatings)).toBeTruthy();
       expect(vm.playerRatings.length === 5).toBeTruthy();
     });
