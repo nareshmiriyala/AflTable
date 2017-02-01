@@ -17,9 +17,9 @@
 
 
 
-    it('should define more than 5 awesome things', function() {
-      expect(angular.isArray(vm.palayerRatings)).toBeTruthy();
-      expect(vm.palayerRatings.length === 5).toBeTruthy();
+    it('should define more than 5 player rankings', function() {
+      expect(angular.isArray(vm.playerRatings)).toBeTruthy();
+      expect(vm.playerRatings.length === 5).toBeTruthy();
     });
   });
 })();

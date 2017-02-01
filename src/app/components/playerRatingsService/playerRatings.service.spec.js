@@ -22,7 +22,8 @@
         var data = playerRatings.getRatings();
         expect(data).toEqual(jasmine.any(Array));
         expect(data[0]).toEqual(jasmine.any(Object));
-        expect(data.length > 5).toBeTruthy();
+
+        expect(data.length >= 5).toBeTruthy();
       });
     });
   });

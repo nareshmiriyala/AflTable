@@ -13,7 +13,7 @@
     getPlayerRatings();
     function getPlayerRatings() {
       vm.playerRatings = playerRatings.getRatings();
-      console.log(""+vm.playerRatings);
+
       angular.forEach(vm.playerRatings, function(playerRating) {
         playerRating.rank = Math.random();
       });

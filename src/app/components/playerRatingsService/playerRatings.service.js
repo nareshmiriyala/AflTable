@@ -107,7 +107,7 @@
     this.getRatings = ratings;
 
     function ratings() {
-      console.log("called Value is:"+data[0].playerRatings);
+
       return data[0].playerRatings;
     }
   }
