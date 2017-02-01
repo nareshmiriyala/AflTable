@@ -16,7 +16,7 @@
       <th>Club</th>
       <th>Position</th>
       </thead>
-        <tr ng-repeat="rating in main.playerRatings">
+        <tr ng-repeat="rating in main.playerRatings|orderBy:'detailedRatings[0].ranking'">
           <td ><span class="square">{{rating.detailedRatings[0].ranking}}</span>
           </td>
 
