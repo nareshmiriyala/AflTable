@@ -3,10 +3,9 @@
 
     describe('controllers', function () {
         var vm;
-
         beforeEach(module('aflTableApp'));
         beforeEach(inject(function (_$controller_, _playerRatings_) {
-            spyOn(_playerRatings_, 'getRatings').and.returnValue([{}, {}, {}, {}, {}]);
+            spyOn(_playerRatings_, 'query').and.returnValue([{}, {}, {}, {}, {}]);
 
             vm = _$controller_('MainController');
         }));
@@ -16,9 +15,9 @@
         });
 
 
-        it('should define 5 player rankings', function () {
+        it('should return an array', function () {
             expect(angular.isArray(vm.playerRatings)).toBeTruthy();
-            expect(vm.playerRatings.length === 5).toBeTruthy();
+
         });
     });
 })();

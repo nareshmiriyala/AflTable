@@ -3,8 +3,8 @@
  */
 (function () {
     'use strict';
-    angular.module('playerRatingsMock',['ngMockE2E']).run(function($httpBackend){
-        var ratings=[
+    angular.module('playerRatingsMock', ['ngMockE2E']).run(function ($httpBackend) {
+        var ratings = [
             {
                 "playerRatings": [
                     {
@@ -100,7 +100,7 @@
                 ]
             }
         ];
-        var ratingsUrl='/api/ratings';
+        var ratingsUrl = '/api/ratings';
         $httpBackend.whenGET(ratingsUrl).respond(ratings);
         $httpBackend.whenGET(/app/).passThrough()
     });
