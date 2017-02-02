@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('AflTableApp')
+    .module('aflTableApp')
     .controller('MainController',MainController);
 
   /** @ngInject */

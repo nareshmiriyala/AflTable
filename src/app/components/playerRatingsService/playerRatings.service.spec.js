@@ -3,7 +3,7 @@
 
   describe('service playerRatings', function() {
     var playerRatings;
-    beforeEach(module('AflTableApp'));
+    beforeEach(module('aflTableApp'));
 
     beforeEach(inject(function(_playerRatings_) {
       playerRatings = _playerRatings_;

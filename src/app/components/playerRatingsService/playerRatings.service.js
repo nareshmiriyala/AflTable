@@ -4,7 +4,7 @@
 (function() {
   'use strict';
   angular
-    .module('AflTableApp')
+    .module('aflTableApp')
     .factory('playerRatings', playerRatings);
   function playerRatings($resource) {
 
