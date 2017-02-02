@@ -15,7 +15,7 @@
         function getPlayerRatings() {
             playerRatings.query(function (data) {
 
-                vm.playerRatings= data[0].playerRatings;
+                vm.playerRatings = data[0].playerRatings;
             });
         }
     }

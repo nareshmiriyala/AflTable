@@ -1,14 +1,14 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('aflTableApp')
-    .run(runBlock);
+    angular
+        .module('aflTableApp')
+        .run(runBlock);
 
-  /** @ngInject */
-  function runBlock($log) {
+    /** @ngInject */
+    function runBlock($log) {
 
-    $log.debug('runBlock end');
-  }
+        $log.debug('runBlock end');
+    }
 
 })();
