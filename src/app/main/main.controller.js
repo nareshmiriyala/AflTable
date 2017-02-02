@@ -11,11 +11,11 @@
         vm.creationDate = 1485943769706;
         vm.playerRatings = [];
 
-        playerRatings = getPlayerRatings();
+        getPlayerRatings();
         function getPlayerRatings() {
             playerRatings.query(function (data) {
 
-                return data[0].playerRatings;
+                vm.playerRatings= data[0].playerRatings;
             });
         }
     }
