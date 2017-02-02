@@ -13,7 +13,9 @@
 
     getPlayerRatings();
     function getPlayerRatings() {
-      vm.playerRatings = playerRatings.getRatings();
+       playerRatings.query(function(data){
+         vm.playerRatings =data[0].playerRatings;
+      });
     }
   }
 })();
